@@ -1,0 +1,17 @@
+diff --git a/node_modules/call-bind/index.js b/node_modules/call-bind/index.js
+index 6fa3e4a..2373084 100644
+--- a/node_modules/call-bind/index.js
++++ b/node_modules/call-bind/index.js
+@@ -40,8 +40,8 @@ var applyBind = function applyBind() {
+ 	return $reflectApply(bind, $apply, arguments);
+ };
+ 
+-if ($defineProperty) {
++// if ($defineProperty) {
+ 	$defineProperty(module.exports, 'apply', { value: applyBind });
+-} else {
+-	module.exports.apply = applyBind;
+-}
++// } else {
++// 	module.exports.apply = applyBind;
++// }
