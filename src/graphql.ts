@@ -3,7 +3,7 @@ import { setContext } from '@apollo/client/link/context';
 import { uniqWith } from 'lodash';
 
 const httpLink = createHttpLink({
-  uri: import.meta.env.SNOWPACK_ARCEUS_ENDPOINT,
+  uri: import.meta.env.SNOWPACK_PUBLIC_ARCEUS_ENDPOINT,
 });
 
 const authLink = setContext((_, { headers }) => {
